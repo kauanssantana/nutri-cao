@@ -50,3 +50,33 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #e51d24; /* Vermelho dos botões de conversão */
 }
+
+/* Configuração do Carrossel Centralizado (BannerCarousel) */
+.center-carousel {
+  --slide-width: 90%;
+  --offset: 5%;
+  transform: translateX(
+    calc(-1 * var(--current-index) * var(--slide-width) + var(--offset))
+  );
+}
+
+@media (min-width: 768px) {
+  .center-carousel {
+    --slide-width: 80%;
+    --offset: 10%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .center-carousel {
+    --slide-width: 75%;
+    --offset: 12.5%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .center-carousel {
+    --slide-width: 65%;
+    --offset: 17.5%;
+  }
+}

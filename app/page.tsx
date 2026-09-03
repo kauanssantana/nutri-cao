@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import BannerCarousel from "./components/BannerCarousel";
 import Categories from "./components/Categories";
 import FeaturedProducts from "./components/FeaturedProducts";
 import Services from "./components/Services";
@@ -15,6 +16,7 @@ export default function NutriCaoLandingPage() {
     <div className="min-h-screen bg-gray-50 font-sans text-slate-800">
       <Header whatsappLink={WHATSAPP_LINK} />
       <Hero whatsappLink={WHATSAPP_LINK} />
+      <BannerCarousel />
       <Categories />
       <FeaturedProducts whatsappLink={WHATSAPP_LINK} />
       <Services />
