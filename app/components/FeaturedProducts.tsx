@@ -111,6 +111,79 @@ export default function FeaturedProducts({
       badge: "Clínico",
       badgeColor: "bg-[#E51D24]",
     },
+    // Lote 3
+    {
+      id: 13,
+      title: "Comedouro e Bebedouro Automático",
+      description:
+        "Simplesmente lindo esse comedouro duplo automático 🐾😸🐶 Garanta o comedouro perfeito para seu pet!",
+      image: "/bebedouro.jpg",
+      badge: "Destaque",
+      badgeColor: "bg-[#FFE115] text-[#0B306B]",
+    },
+    {
+      id: 14,
+      title: "Bolsa de Transporte",
+      description:
+        "Bolsa de transporte confortável e segura para seu pet! 🐾 Com abertura superior e laterais com tela.",
+      image: "/bolsa-transporte.jpg",
+      badge: "Novidade",
+      badgeColor: "bg-[#0B306B]",
+    },
+    {
+      id: 15,
+      title: "Bifinhos Keldog",
+      description:
+        "Bifinhos Keldog 💙 Sabores diversos em embalagens econômicas. Deliciosamente suculento!",
+      image: "/bifinhos.jpg",
+      badge: "Mais Vendido",
+      badgeColor: "bg-[#E51D24]",
+    },
+    {
+      id: 16,
+      title: "Colônia Sanol Dog",
+      description:
+        "Perfume suave e duradouro! Opções para Fêmea (Red Flowers), Macho (Marine Green) e Filhotes (Baby Lavender).",
+      image: "/colonia.jpg",
+      badge: "Essencial",
+      badgeColor: "bg-[#25D366]",
+    },
+    {
+      id: 17,
+      title: "Gaiola para Hamster com Tubos",
+      description:
+        "Proporcione diversão! Conta com tubos interligados para explorar, roda de exercício e andares.",
+      image: "/gaiola.jpg",
+      badge: "Roedores",
+      badgeColor: "bg-[#0B306B]",
+    },
+    {
+      id: 18,
+      title: "Mega Ball Hamster",
+      description:
+        "Bola de exercício colorida e segura para seu pequeno roedor gastar energia com muita diversão.",
+      image: "/mega-ball-hamster.jpg",
+      badge: null,
+    },
+    // Lote 4 (Aves)
+    {
+      id: 19,
+      title: "Viveiro para Aves",
+      description:
+        "Dê mais espaço e conforto para sua ave voar! Conta com estrutura espaçosa, poleiros e rodinhas para mobilidade.",
+      image: "/viveiro.jpg",
+      badge: "Aves",
+      badgeColor: "bg-[#0B306B]",
+    },
+    {
+      id: 20,
+      title: "TV Interativa para Calopsita",
+      description:
+        "Diversão garantida! Brinquedos e acessórios para aves, como esta TV interativa que vai entreter sua calopsita por horas.",
+      image: "/brinquedo-calop.jpg",
+      badge: "Destaque",
+      badgeColor: "bg-[#FFE115] text-[#0B306B]",
+    },
   ];
 
   return (
@@ -122,7 +195,7 @@ export default function FeaturedProducts({
               Vitrine de Produtos
             </h2>
             <p className="text-gray-500">
-              Os queridinhos dos nossos clientes peludos (e de penas também!).
+              Os queridinhos dos nossos clientes peludos.
             </p>
           </div>
         </div>
