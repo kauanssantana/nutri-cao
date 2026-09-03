@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   title: "Nutri-Cão Rações | O melhor para o seu pet",
   description:
     "A Nutri-Cão Rações oferece grande variedade de rações, medicamentos, acessórios e delivery rápido até 2km no Jardim Santa Barbara, São Paulo.",
+  // Adicionamos o ícone aqui embaixo! 👇
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({

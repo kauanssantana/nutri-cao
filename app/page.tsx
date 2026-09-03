@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import BannerCarousel from "./components/BannerCarousel";
 import Categories from "./components/Categories";
 import FeaturedProducts from "./components/FeaturedProducts";
+import Brands from "./components/Brands";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -15,10 +16,19 @@ export default function NutriCaoLandingPage() {
   return (
     <div className="min-h-screen bg-gray-50 font-sans text-slate-800">
       <Header whatsappLink={WHATSAPP_LINK} />
+
+      {/* 1. Banner principal do topo */}
       <Hero whatsappLink={WHATSAPP_LINK} />
+
+      {/* 2. Carrossel Promocional (Abaixo do banner) */}
       <BannerCarousel />
+
+      {/* 3. Categorias (Abaixo do carrossel) */}
       <Categories />
+
+      {/* Restante da página */}
       <FeaturedProducts whatsappLink={WHATSAPP_LINK} />
+      <Brands />
       <Services />
       <Footer whatsappLink={WHATSAPP_LINK} />
       <WhatsAppButton whatsappLink={WHATSAPP_LINK} />
