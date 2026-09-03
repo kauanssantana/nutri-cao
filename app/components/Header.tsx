@@ -1,64 +1,82 @@
 import React from "react";
-import { Search, MapPin, Star, Truck, MessageCircle } from "lucide-react";
+import { MessageCircle, MapPin, Truck, Star } from "lucide-react";
 
 export default function Header({ whatsappLink }: { whatsappLink: string }) {
   return (
-    <>
-      {/* 1. TOP BAR INSTITUCIONAL */}
-      <div className="bg-[#0B306B] text-white text-xs font-medium py-2 px-4">
+    <header className="sticky top-0 z-50 bg-white shadow-sm">
+      {/* Barra superior de informações */}
+      <div className="bg-[#0B306B] text-white text-xs py-2 px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
           <div className="flex items-center gap-2 text-center sm:text-left">
             <MapPin size={14} className="text-[#FFE115] shrink-0" />
             <span>R. Jequirituba, 1999 - Jardim Santa Barbara, São Paulo</span>
           </div>
           <div className="flex items-center gap-4">
-            <span className="flex items-center gap-1">
-              <Truck size={14} className="text-[#FFE115]" /> Entrega até 2 km
-            </span>
-            <span className="flex items-center gap-1">
-              <Star size={14} className="text-[#FFE115] fill-[#FFE115]" /> 4,9
-              (103 avaliações)
-            </span>
+            <div className="flex items-center gap-1.5">
+              <Truck size={14} className="text-[#FFE115]" />
+              <span>Entrega até 2 km</span>
+            </div>
+            <div className="flex items-center gap-1">
+              <Star size={14} className="fill-[#FFE115] text-[#FFE115]" />
+              <span className="font-bold">4,9</span>
+              <span className="text-gray-300">(103 avaliações)</span>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* 2. NAVBAR */}
-      <nav className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center gap-4 sm:gap-8">
-          {/* Logo */}
-          <div className="w-32 sm:w-40 flex-shrink-0">
-            <img
-              src="/logo.png"
-              alt="Nutri-Cão Rações"
-              className="w-full h-auto object-contain"
-            />
-          </div>
+      {/* Cabeçalho principal */}
+      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+        {/* Logo */}
+        <a href="#" className="flex items-center gap-2 shrink-0">
+          <img
+            src="/logo.png"
+            alt="Nutri-Cão Rações"
+            className="w-24 md:w-28 object-contain"
+          />
+        </a>
 
-          {/* Search Bar (Visual) */}
-          <div className="hidden md:flex flex-1 max-w-2xl relative">
-            <input
-              type="text"
-              placeholder="O que o seu pet precisa hoje?"
-              className="w-full bg-gray-100 rounded-full py-3 px-6 pr-12 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B306B]"
-            />
-            <button className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-[#0B306B]">
-              <Search size={20} />
-            </button>
-          </div>
+        {/* Links de navegação entre as seções */}
+        <nav className="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
+          <a href="#" className="hover:text-[#0B306B] transition-colors">
+            Início
+          </a>
+          <a
+            href="#produtos"
+            className="hover:text-[#0B306B] transition-colors"
+          >
+            Produtos
+          </a>
+          <a href="#marcas" className="hover:text-[#0B306B] transition-colors">
+            Marcas
+          </a>
+          <a
+            href="#avaliacoes"
+            className="hover:text-[#0B306B] transition-colors"
+          >
+            Avaliações
+          </a>
+          <a
+            href="#servicos"
+            className="hover:text-[#0B306B] transition-colors"
+          >
+            Serviços
+          </a>
+        </nav>
 
-          {/* CTA */}
+        {/* Botão de Ação rápida */}
+        <div>
           <a
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:flex items-center gap-2 bg-[#E51D24] hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full transition-colors uppercase text-sm tracking-wide"
+            className="inline-flex items-center gap-2 bg-[#E51D24] hover:bg-red-700 text-white font-bold py-2.5 px-6 rounded-full transition-all text-xs md:text-sm uppercase tracking-wider shadow-sm"
           >
             <MessageCircle size={18} />
-            Pedir via WhatsApp
+            <span>Pedir via WhatsApp</span>
           </a>
         </div>
-      </nav>
-    </>
+      </div>
+    </header>
   );
 }

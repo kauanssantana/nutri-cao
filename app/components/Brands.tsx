@@ -16,7 +16,10 @@ export default function Brands() {
   const duplicatedBrands = [...brands, ...brands];
 
   return (
-    <section className="py-12 bg-gray-50 border-t border-gray-100 overflow-hidden">
+    <section
+      id="marcas"
+      className="py-12 bg-gray-50 border-t border-gray-100 overflow-hidden scroll-mt-20"
+    >
       <div className="max-w-7xl mx-auto px-4 mb-8">
         <h2 className="text-2xl md:text-3xl font-extrabold text-[#0B306B] mb-2">
           Marcas queridinhas
@@ -33,7 +36,6 @@ export default function Brands() {
               key={index}
               className="flex-shrink-0 w-[120px] h-[70px] md:w-[160px] md:h-[85px] bg-white rounded-2xl border border-gray-200 shadow-sm flex items-center justify-center p-4 hover:shadow-md transition-shadow cursor-pointer"
             >
-              {/* Removi o 'grayscale hover:grayscale-0' da linha abaixo */}
               <img
                 src={brand.logo}
                 alt={`Logo da marca ${brand.name}`}

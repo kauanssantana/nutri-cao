@@ -3,7 +3,10 @@ import { Truck, CreditCard, MapPin } from "lucide-react";
 
 export default function Services() {
   return (
-    <section className="py-16 bg-white overflow-hidden">
+    <section
+      id="servicos"
+      className="py-16 bg-white overflow-hidden scroll-mt-20"
+    >
       <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         <div className="order-2 md:order-1 relative rounded-3xl overflow-hidden shadow-lg border-4 border-[#FFE115]">
           <img
@@ -61,7 +64,7 @@ export default function Services() {
                   Loja Física Completa
                 </h4>
                 <p className="text-gray-500">
-                  Compras na loja com estacionamento descoberto gratuito.
+                  Compras na loja com estacionamento exclusivo.
                 </p>
               </div>
             </li>

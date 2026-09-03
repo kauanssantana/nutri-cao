@@ -54,7 +54,10 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="py-16 bg-white border-t border-gray-100">
+    <section
+      id="avaliacoes"
+      className="py-16 bg-white border-t border-gray-100 scroll-mt-20"
+    >
       <div className="max-w-7xl mx-auto px-4">
         {/* Cabeçalho da Seção */}
         <div className="text-center mb-12">
