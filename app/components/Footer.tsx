@@ -1,10 +1,10 @@
 import React from "react";
 import { MessageCircle, MapPin, Clock } from "lucide-react";
 
-// Ícone do Instagram em SVG
+// Ícone do Instagram em SVG corrigido
 const InstagramIcon = ({ size = 24, className = "" }) => (
   <svg
-    xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)"
+    xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}
     viewBox="0 0 24 24"
@@ -39,7 +39,7 @@ export default function Footer({ whatsappLink }: { whatsappLink: string }) {
           </p>
           <div className="flex gap-4">
             <a
-              href="[https://www.instagram.com/nutricao.oficial_/](https://www.instagram.com/nutricao.oficial_/)"
+              href="https://www.instagram.com/nutricao.oficial_/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#E51D24] transition-colors"

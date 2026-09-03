@@ -5,10 +5,12 @@ import BannerCarousel from "./components/BannerCarousel";
 import Categories from "./components/Categories";
 import FeaturedProducts from "./components/FeaturedProducts";
 import Brands from "./components/Brands";
-import Testimonials from "./components/Testimonials"; // <-- Importe aqui
+import Testimonials from "./components/Testimonials";
 import Services from "./components/Services";
+import LocationSection from "./components/LocationSection"; // <-- Importe aqui
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
+import BackToTopButton from "./components/BackToTopButton";
 
 export default function NutriCaoLandingPage() {
   const WHATSAPP_NUMBER = "551159275335";
@@ -22,13 +24,12 @@ export default function NutriCaoLandingPage() {
       <Categories />
       <FeaturedProducts whatsappLink={WHATSAPP_LINK} />
       <Brands />
-
-      {/* Seção de Depoimentos */}
       <Testimonials />
-
       <Services />
+      <LocationSection /> {/* <-- Posicionado antes do rodapé */}
       <Footer whatsappLink={WHATSAPP_LINK} />
       <WhatsAppButton whatsappLink={WHATSAPP_LINK} />
+      <BackToTopButton />
     </div>
   );
 }

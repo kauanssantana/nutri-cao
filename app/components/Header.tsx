@@ -62,6 +62,12 @@ export default function Header({ whatsappLink }: { whatsappLink: string }) {
           >
             Serviços
           </a>
+          <a
+            href="#localizacao"
+            className="hover:text-[#0B306B] transition-colors"
+          >
+            Localização
+          </a>
         </nav>
 
         {/* Botão de Ação rápida */}
